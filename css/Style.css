@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b1d;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055;
+}
+
+.team-name span {
+    color: #00f2fe;
+    text-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe;
+}
+
+.sub-title {
+    color: #888;
+    margin-top: 10px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    border-color: #00f2fe;
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.2);
+}
+
+.main {
+    border: 1px solid #ff0055;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff0055;
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #00f2fe;
+}
+
+.hobby {
+    font-style: italic;
+    color: #00f2fe;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00f2fe;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #00f2fe;
+    color: #00f2fe;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 20px #fff;
+}
